@@ -1,11 +1,15 @@
 import { app, BrowserWindow, ipcMain } from 'electron';
 import path from 'path';
 import DatabaseManager from '../database/db';
+const { updateElectronApp } = require('update-electron-app');
 
 let mainWindow;
 let dbManager;
 
 if (require('electron-squirrel-startup')) app.quit();
+
+// Updater
+updateElectronApp();
 
 function createWindow() {
     mainWindow = new BrowserWindow({

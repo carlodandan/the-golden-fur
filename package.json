@@ -16,6 +16,10 @@
     "name": "Carlo Dandan",
     "email": "carlodandan.personal@proton.me"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlodandan/the-golden-fur"
+  },
   "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^7.10.2",
@@ -28,6 +32,7 @@
     "vite": "^5.4.21"
   },
   "dependencies": {
+    "@electron-forge/publisher-github": "^7.10.2",
     "@eslint/js": "^9.39.2",
     "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^19.2.7",
@@ -46,6 +51,7 @@
     "react": "^19.2.3",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.10.1",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "update-electron-app": "^3.1.2"
   }
 }

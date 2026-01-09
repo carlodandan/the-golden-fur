@@ -22,20 +22,6 @@ module.exports = {
       },
     }
   ],
-  publishers: [
-    {
-      name: '@electron-forge/publisher-github',
-      config: {
-        repository: {
-          owner: 'carlodandan',
-          name: 'the-golden-fur'
-        },
-        prerelease: true,
-        authToken: process.env.GITHUB_TOKEN,
-        tagPrefix: 'tgf-'
-      }
-    }
-  ],
   plugins: [
     {
       name: '@electron-forge/plugin-vite',
